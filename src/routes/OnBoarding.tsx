@@ -1,14 +1,15 @@
 import Button from "../components/button";
-import logo from "../assets/QwentaMenuMakerLogo.png";
-import image1 from "../assets/onboarding1.png";
-import image2 from "../assets/onboarding2.png";
+import Logo from "../assets/QwentaMenuMakerLogo.png";
+import Image1 from "../assets/onboarding1.png";
+import Image2 from "../assets/onboarding2.png";
+import ContentBackground from "../assets/Rectangle 3.png";
 import { NavLink } from "react-router";
 
 export default function OnBoarding() {
   return (
     <div className="flex flex-col gap-16">
       <div className="flex flex-row justify-between items-center p-6 px-20">
-        <img src={logo} alt="Qwenta" width={184} />
+        <img src={Logo} alt="Qwenta" width={184} />
         <div className="flex flex-row gap-12">
           <p>Exemples</p>
           <p>Tarifs</p>
@@ -32,11 +33,14 @@ export default function OnBoarding() {
           </NavLink>
         </div>
         <div className="relative min-w-[439px]">
-          <img src={image1} alt="Image menu" width={439} />
+          <img src={Image1} alt="Image menu" width={439} />
           <div className="absolute inset-0 border border-[#C5A073] rounded-lg -bottom-5 -left-5 top-5 right-5 -z-10" />
         </div>
       </div>
-      <div className="flex flex-row pl-44 gap-20 py-24 bg-white">
+      <div
+        className="flex flex-row pl-44 gap-20 py-24 "
+        style={{ backgroundImage: `url(${ContentBackground})` }}
+      >
         <div className="flex flex-col justify-around">
           <h2 className=" text-3xl">Personnalisez votre menu</h2>
           <p className=" text-xl">
@@ -51,7 +55,7 @@ export default function OnBoarding() {
             </Button>
           </NavLink>
         </div>
-        <img src={image2} alt="Image menu" width={720} />
+        <img src={Image2} alt="Image menu" width={720} />
       </div>
       <div className=" px-40 py-24">
         <h2 className="text-center text-3xl pb-2">
