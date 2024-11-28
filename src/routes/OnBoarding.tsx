@@ -1,14 +1,13 @@
 import Button from "../components/button";
+import logo from "../assets/QwentaMenuMakerLogo.png";
+import image1 from "../assets/onboarding1.png";
+import image2 from "../assets/onboarding2.png";
 
 export default function OnBoarding() {
   return (
     <div className="flex flex-col gap-16">
       <div className="flex flex-row justify-between items-center p-6 px-20">
-        <img
-          src="src\assets\QwentaMenuMakerLogo.png"
-          alt="Qwenta"
-          width={184}
-        />
+        <img src={logo} alt="Qwenta" width={184} />
         <div className="flex flex-row gap-12">
           <p>Exemples</p>
           <p>Tarifs</p>
@@ -29,7 +28,7 @@ export default function OnBoarding() {
             <p>Se connecter</p>
           </Button>
         </div>
-        <img src="src\assets\onboarding1.png" alt="Image menu" width={438.71} />
+        <img src={image1} alt="Image menu" width={438.71} />
       </div>
       <div className="flex flex-row pl-44 gap-20">
         <div className="flex flex-col justify-around">
@@ -44,7 +43,62 @@ export default function OnBoarding() {
             <p>Se lancer</p>
           </Button>
         </div>
-        <img src="src\assets\onboarding2.png" alt="Image menu" width={720} />
+        <img src={image2} alt="Image menu" width={720} />
+      </div>
+      <div className=" px-40 py-36">
+        <h2 className="text-center text-3xl pb-2">
+          Comment créer votre menu ?
+        </h2>
+        <p className="text-center text-xl pb-16">
+          Réalisez votre menu en seulement trois étapes
+        </p>
+        <div className=" justify-between flex flex-row">
+          <div className="flex bg-white w-96 flex-col p-2 rounded relative">
+            <div className="absolute inset-0 border-2 border-[#C5A073] rounded-lg -bottom-3 -left-3 top-3 right-3 -z-10" />
+            <div className="absolute rounded-full w-3 h-3 bg-[#C5A073] left-4 top-4" />
+            <h1
+              className="text-right text-7xl font-black text-white"
+              style={{ WebkitTextStroke: "1px #D97606" }}
+            >
+              1
+            </h1>
+            <p className=" text-base px-8 pb-8">
+              Listez l’ensemble de vos boissons, entrées, plats, desserts,
+              accompagnements... à afficher sur votre menu.
+            </p>
+          </div>
+          <div className="flex bg-white w-96 flex-col p-2 rounded relative">
+            <div className="absolute inset-0 border-2 border-[#C5A073] rounded-lg -bottom-3 -left-3 top-3 right-3 -z-10" />
+            <div className="absolute rounded-full w-3 h-3 bg-[#C5A073] left-4 top-4" />
+            <h1
+              className="text-right text-7xl font-black text-white"
+              style={{ WebkitTextStroke: "1px #D97606" }}
+            >
+              2
+            </h1>
+            <p className=" text-base px-8 pb-8">
+              Choisissez le style qui correspond à votre restaurant (logo,
+              couleurs, typos).
+            </p>
+          </div>
+          <div className="flex bg-white w-96 flex-col p-2 rounded relative">
+            <div className="absolute inset-0 border-2 border-[#C5A073] rounded-lg -bottom-3 -left-3 top-3 right-3 -z-10" />
+            <div className="absolute rounded-full w-3 h-3 bg-[#C5A073] left-4 top-4" />
+            <h1
+              className="text-right text-7xl font-black text-white"
+              style={{ WebkitTextStroke: "1px #D97606" }}
+            >
+              3
+            </h1>
+            <p className=" text-base px-8 pb-8">
+              Enregistrez votre menu en PDF et diffusez-le sur vos plateformes
+              de vente en ligne.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className=" bg-white p-3 pr-10">
+        <p className="text-right">Tous droits réservés. Mentions légales</p>
       </div>
     </div>
   );
