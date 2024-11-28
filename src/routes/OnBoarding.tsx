@@ -2,6 +2,7 @@ import Button from "../components/button";
 import logo from "../assets/QwentaMenuMakerLogo.png";
 import image1 from "../assets/onboarding1.png";
 import image2 from "../assets/onboarding2.png";
+import { NavLink } from "react-router";
 
 export default function OnBoarding() {
   return (
@@ -11,10 +12,10 @@ export default function OnBoarding() {
         <div className="flex flex-row gap-12">
           <p>Exemples</p>
           <p>Tarifs</p>
-          <p>Se connecter</p>
+          <NavLink to="/Dashboard">Se connecter</NavLink>
         </div>
       </div>
-      <div className="flex flex-row px-44 gap-20">
+      <div className="flex flex-row px-44 pb-24 gap-20">
         <div className="flex flex-col justify-around">
           <h1 className=" text-5xl">
             Réalisez et diffusez votre menu personnalisé
@@ -24,13 +25,18 @@ export default function OnBoarding() {
             Créez votre menu en ligne et partagez-le sur toutes les plateformes
             !
           </p>
-          <Button color={"8BC7B1"}>
-            <p>Se connecter</p>
-          </Button>
+          <NavLink to="/Dashboard">
+            <Button color={"8BC7B1"}>
+              <p>Se connecter</p>
+            </Button>
+          </NavLink>
         </div>
-        <img src={image1} alt="Image menu" width={438.71} />
+        <div className="relative w-full">
+          <img src={image1} alt="Image menu" width={438.71} />
+          <div className="absolute inset-0 border border-[#C5A073] rounded-lg -bottom-5 -left-5 top-5 right-5 -z-10" />
+        </div>
       </div>
-      <div className="flex flex-row pl-44 gap-20">
+      <div className="flex flex-row pl-44 gap-20 py-24 bg-white">
         <div className="flex flex-col justify-around">
           <h2 className=" text-3xl">Personnalisez votre menu</h2>
           <p className=" text-xl">
@@ -39,22 +45,24 @@ export default function OnBoarding() {
             votre menu au format que vous souhaitez et diffusez-le auprès de
             votre clientèle !
           </p>
-          <Button color={"8BC7B1"} type={"secondary"}>
-            <p>Se lancer</p>
-          </Button>
+          <NavLink to="/Dashboard">
+            <Button color={"8BC7B1"} type={"secondary"}>
+              <p>Se lancer</p>
+            </Button>
+          </NavLink>
         </div>
         <img src={image2} alt="Image menu" width={720} />
       </div>
-      <div className=" px-40 py-36">
+      <div className=" px-40 py-24">
         <h2 className="text-center text-3xl pb-2">
           Comment créer votre menu ?
         </h2>
         <p className="text-center text-xl pb-16">
           Réalisez votre menu en seulement trois étapes
         </p>
-        <div className=" justify-between flex flex-row">
+        <div className=" justify-between flex flex-row gap-10">
           <div className="flex bg-white w-96 flex-col p-2 rounded relative">
-            <div className="absolute inset-0 border-2 border-[#C5A073] rounded-lg -bottom-3 -left-3 top-3 right-3 -z-10" />
+            <div className="absolute inset-0 border border-[#C5A073] rounded-lg -bottom-3 -left-3 top-3 right-3 -z-10" />
             <div className="absolute rounded-full w-3 h-3 bg-[#C5A073] left-4 top-4" />
             <h1
               className="text-right text-7xl font-black text-white"
@@ -68,7 +76,7 @@ export default function OnBoarding() {
             </p>
           </div>
           <div className="flex bg-white w-96 flex-col p-2 rounded relative">
-            <div className="absolute inset-0 border-2 border-[#C5A073] rounded-lg -bottom-3 -left-3 top-3 right-3 -z-10" />
+            <div className="absolute inset-0 border border-[#C5A073] rounded-lg -bottom-3 -left-3 top-3 right-3 -z-10" />
             <div className="absolute rounded-full w-3 h-3 bg-[#C5A073] left-4 top-4" />
             <h1
               className="text-right text-7xl font-black text-white"
@@ -82,7 +90,7 @@ export default function OnBoarding() {
             </p>
           </div>
           <div className="flex bg-white w-96 flex-col p-2 rounded relative">
-            <div className="absolute inset-0 border-2 border-[#C5A073] rounded-lg -bottom-3 -left-3 top-3 right-3 -z-10" />
+            <div className="absolute inset-0 border border-[#C5A073] rounded-lg -bottom-3 -left-3 top-3 right-3 -z-10" />
             <div className="absolute rounded-full w-3 h-3 bg-[#C5A073] left-4 top-4" />
             <h1
               className="text-right text-7xl font-black text-white"
