@@ -54,16 +54,11 @@ export default function Dashboard() {
           <div className="flex flex-row justify-between w-full gap-5">
             {additionalItems.map((item) => (
               <div
-                className="bg-white flex w-[295px] flex-col rounded-xl"
+                className="bg-white flex w-full flex-col rounded-xl"
                 key={item.text}
               >
-                <img
-                  src={item.image}
-                  alt="illustration"
-                  width={295}
-                  className=""
-                />
-                <p className="text-base px-5 py-3">{item.text}</p>
+                <img src={item.image} alt="illustration" className="w-full" />
+                <p className="text-base px-10 py-8">{item.text}</p>
               </div>
             ))}
           </div>

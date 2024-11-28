@@ -109,8 +109,9 @@ export default function OnBoarding() {
           </div>
         </div>
       </div>
-      <div className=" bg-white p-3 pr-10">
-        <p className="text-right">Tous droits réservés. Mentions légales</p>
+      <div className=" bg-white p-3 pr-10 flex flex-row justify-end gap-8">
+        <p>Tous droits réservés. </p>
+        <p>Mentions légales</p>
       </div>
     </div>
   );
