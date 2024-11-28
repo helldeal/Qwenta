@@ -31,8 +31,8 @@ export default function OnBoarding() {
             </Button>
           </NavLink>
         </div>
-        <div className="relative w-full">
-          <img src={image1} alt="Image menu" width={438.71} />
+        <div className="relative min-w-[439px]">
+          <img src={image1} alt="Image menu" width={439} />
           <div className="absolute inset-0 border border-[#C5A073] rounded-lg -bottom-5 -left-5 top-5 right-5 -z-10" />
         </div>
       </div>
