@@ -27,9 +27,9 @@ const additionalItems = [
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-row">
+    <div className="flex">
       <SidePanel />
-      <div className="flex flex-col p-20 gap-20 grow">
+      <div className="flex flex-col p-20 gap-20 grow ml-80">
         <div className="flex flex-row items-center gap-8">
           <div className=" bg-white rounded-md">
             <img className="px-10 py-5" src={nykosLogo} alt="nykos logo" />
