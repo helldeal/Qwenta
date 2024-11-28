@@ -10,7 +10,7 @@ const menuItems = [
 
 export default function SidePanel() {
   return (
-    <div className="bg-white flex flex-col sticky left-0 h-screen w-80 py-9 px-14">
+    <div className="bg-white flex flex-col sticky left-0 w-80 py-9 px-14">
       <NavLink to="/">
         <img className="h-fit" src={logo} alt="logo" width={184} />
       </NavLink>
