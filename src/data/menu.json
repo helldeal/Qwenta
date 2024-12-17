@@ -1,0 +1,74 @@
+{
+    "Menu": {
+        "Souvlakis": [
+            {
+                "Nom": "Souvlaki Poulet",
+                "Prix": "8,50€",
+                "Description": "Poulet, tomate, salade, origan, citron, tzatziki, jus de viande"
+            },
+            {
+                "Nom": "Souvlaki Poulet",
+                "Prix": "8,50€",
+                "Description": "Poulet, tomate, salade, origan, citron, tzatziki, jus de viande"
+            },
+            {
+                "Nom": "Souvlaki Poulet",
+                "Prix": "8,50€",
+                "Description": "Poulet, tomate, salade, origan, citron, tzatziki, jus de viande"
+            }
+        ],
+        "Assiettes": [
+            {
+                "Nom": "Salade grecque",
+                "Prix": "4,50€",
+                "Description": "Tomates, salades, feta, concombre, huile d'olive"
+            },
+            {
+                "Nom": "Gyros",
+                "Prix": "11,50€",
+                "Description": "Agneau, tzatziki, pita, frites & salade grecque"
+            },
+            {
+                "Nom": "Keftedes",
+                "Prix": "13,50€",
+                "Description": "Boulettes de veau grecque, servi avec des frites & feta"
+            }
+        ],
+        "Accompagnement": [
+            {
+                "Nom": "Frites à l'origan",
+                "Prix": "3,50€"
+            },
+            {
+                "Nom": "Olives Kalamata",
+                "Prix": "3,50€"
+            }
+        ],
+        "Boissons": [
+            {
+                "Nom": "Coca-Cola 33cl",
+                "Prix": "2,50€"
+            },
+            {
+                "Nom": "Mythos 25cl 4,5%",
+                "Prix": "4€"
+            },
+            {
+                "Nom": "Ouzo 4cl 40%",
+                "Prix": "8€"
+            },
+            {
+                "Nom": "Citronnade maison",
+                "Prix": "2,50€"
+            },
+            {
+                "Nom": "Thé glacé",
+                "Prix": "3,50€"
+            },
+            {
+                "Nom": "Jus d'orange frais",
+                "Prix": "3,50€"
+            }
+        ]
+    }
+}
