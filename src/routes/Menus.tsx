@@ -40,7 +40,7 @@ export default function Dashboard() {
                 <div key={itemIndex} className="p-4 bg-white rounded-md ">
                   <h3 className="text-2xl font-semibold">{item.Nom}</h3>
                   <p className="text-lg">{item.Description}</p>
-                  <p className="text-lg font-medium">{item.Prix} €</p>
+                  <p className="text-lg font-medium">{item.Prix}</p>
                 </div>
               ))}
             </div>
